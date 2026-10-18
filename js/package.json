@@ -1,0 +1,16 @@
+{
+  "name": "polytestbuysell-js",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Polymarket V2 buy/sell test via official TS clob-client",
+  "dependencies": {
+    "@polymarket/clob-client": "^5.8.1",
+    "@polymarket/clob-client-v2": "^1.0.6",
+    "@polymarket/sdk": "^8.0.1",
+    "axios": "^1.7.0",
+    "dotenv": "^17.4.2",
+    "ethers": "^5.8.0",
+    "https-proxy-agent": "^7.0.0"
+  }
+}

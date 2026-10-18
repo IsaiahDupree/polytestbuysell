@@ -1,0 +1,34 @@
+# NEVER commit secrets
+tools/.env
+.env
+*.key
+__pycache__/
+*.pyc
+.pytest_cache/
+data/*.jsonl
+data/proxy_assignments.json   # holds per-proxy username/password
+node_modules/
+# Local configuration, identity, and runtime state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.private.md
+accounts/
+data/
+logs/
+output/
+outputs/
+coverage/
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.next/
+.vercel/
+build/
+dist/
+.DS_Store
