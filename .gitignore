@@ -6,14 +6,13 @@ __pycache__/
 *.pyc
 .pytest_cache/
 data/*.jsonl
-data/proxy_assignments.json   # holds per-proxy username/password
 node_modules/
+
+# Preserve exclusions from the existing GitHub recovery
 # Local configuration, identity, and runtime state
-.env
 .env.*
 !.env.example
 *.pem
-*.key
 *.private.md
 accounts/
 data/
@@ -21,14 +20,28 @@ logs/
 output/
 outputs/
 coverage/
-node_modules/
 .venv/
 venv/
-__pycache__/
-*.pyc
-.pytest_cache/
 .next/
 .vercel/
 build/
 dist/
 .DS_Store
+# Proxy credentials stay local
+data/proxy_assignments.json
+
+# Finance workspace hygiene (2026-10-24)
+*.py[cod]
+.ruff_cache/
+!.env.sample
+!.env.template
+!.env.*.example
+id_ed25519
+id_rsa
+.sol-keypair.json
+*-keypair.json
+*.log
+.claude/
+.playwright-mcp/
+*.app/
+/files.zip
